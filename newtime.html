@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendship Timeline</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#452216 ;
+            color: #f9f9f9;
+            background-image: url('starrrr.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            background-attachment: fixed;
+           
+            
+
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5rem;
+            color: #F0F8FF;
+            font-family: 'Pacifico', cursive;
+
+
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #F0F8FF;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-event {
+            position:relative;
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .timeline-event:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-event:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-event-content {
+            position: relative;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+           
+        }
+
+        .timeline-event:nth-child(odd) .timeline-event-content {
+            background: #253745; /*CCD0CF; /* Soft blue */
+            transform: translateX(-30px);
+        }
+
+        .timeline-event:nth-child(even) .timeline-event-content {
+            background: #06141B; /*11212D; /* Olive green */
+            transform: translateX(30px);
+        }
+
+        .timeline-event:hover .timeline-event-content {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        /* .timeline-dot {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            background-color: #9BA8AB;
+            border: 4px solid #F0F8FF;
+            border-radius: 50%;
+            top: 20px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+     } */
+        
+
+        .timeline-event:nth-child(odd) .timeline-dot {
+            margin-left: -24px;
+        }
+
+        .timeline-event:nth-child(even) .timeline-dot {
+            margin-left: 24px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .timeline-event {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        .timeline-event img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .color-palette {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .color-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 10px;
+        }
+
+        .color-circle:nth-child(1) { background-color: #2E4A54; }
+        .color-circle:nth-child(2) { background-color: #7291A3; }
+        .color-circle:nth-child(3) { background-color: #808D5E; }
+        .color-circle:nth-child(4) { background-color: #384634; }
+
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #D3D3D3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Friendship Timeline</h1>
+
+    <!-- <div class="color-palette">
+        <div class="color-circle"></div>
+        <div class="color-circle"></div>
+        <div class="color-circle"></div>
+        <div class="color-circle"></div>
+    </div> -->
+
+    <div class="timeline">
+        <div class="timeline-event">
+            <!-- <div class="timeline-dot"></div> -->
+            <div class="timeline-event-content">
+                <h3>2008 - How We Met</h3>
+                <p>We met for the first time at school. in Nursery, we were sooo cutee! and bonded cuz of our moms!.</p>
+                <img src="babyimg.jpg" alt="Memory Image">
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-event-content">
+                <h3>2008-2020 - School Days!</h3>
+                <p>This is when we actually became frnds, had some crazy trips with shala katta grp hehehe.</p>
+                <img src="schl.jpg" alt="Memory Image">
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-event-content">
+                <h3>2021 - 11th n 12th </h3>
+                <p>Those were the golden days.We had the bestest time of all . had so much fun , supported each other, and got emotionally connected.</p>
+                <img src="11n12.jpg" alt="Memory Image">
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-event-content">
+                <h3>2023 - Long Distance Begins</h3>
+                <p>Even when miles apart, we stayed connected through late-night chats,endless calls and the funniest video calls.</p>
+                <img src="ssimg.jpg" alt="Memory Image">
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-event-content">
+                <h3>2024 - Travelling together for the first time!</h3>
+                <p>A day full of fun, laughter, and memories.</p>
+                <img src="travel.jpg" alt="Memory Image">
+            </div>
+        </div>
+
+        <div class="timeline-event">
+            <div class="timeline-dot"></div>
+            <div class="timeline-event-content">
+                <h3>2023 - Looking Ahead</h3>
+                <p>Planning our future adventures and making even more incredible memories.</p>
+                <img src="stargazing.jpg" alt="Memory Image">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Made with ❤️ for the most cherished friendship ever.</p>
+       
+    </footer>
+</body>
+</html>
