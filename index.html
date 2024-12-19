@@ -1,0 +1,311 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #ffafbd, #ffc3a0);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .question-container {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease;
+        }
+
+        .question-container h1 {
+            font-size: 2rem;
+            margin: 0 0 20px;
+        }
+
+        .btn {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #ff6f61;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ff3b2e;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #greeting {
+            font-size: 4rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Caveat', cursive; /* Handwritten style */
+    
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 0 10px #fc1111, 0 0 20px #FF3CAC, 0 0 30px #FF3CAC;
+           
+        }
+
+        #message
+        {
+            color: #150202;
+        }
+
+        .container {
+            text-align: center;
+            color: #fff;
+        }
+
+        spline-viewer {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+        }
+
+        #message {
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="question-container" id="question">
+        <h1>Do you want to see something special?</h1>
+        <button class="btn yes" id="yes-btn">Yes</button>
+        <button class="btn no" id="no-btn">No</button>
+    </div>
+
+    <div class="container hidden" id="birthday-message">
+        <h1 id="greeting">🎉 Happy Birthday Ram! 🎂</h1>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
+        <spline-viewer id="spline-viewer" url="https://prod.spline.design/qe114ehbyg7RsjXQ/scene.splinecode"></spline-viewer>
+        <p id="message">Wishing you a day filled with love, joy, and laughter!</p>
+    </div>
+
+    <script>
+        const yesBtn = document.getElementById('yes-btn');
+        const noBtn = document.getElementById('no-btn');
+        const question = document.getElementById('question');
+        const birthdayMessage = document.getElementById('birthday-message');
+        const splineViewer = document.getElementById('spline-viewer');
+
+        noBtn.addEventListener('mouseover', () => {
+            noBtn.style.position = 'absolute';
+            noBtn.style.top = `${Math.random() * 80 + 10}%`;
+            noBtn.style.left = `${Math.random() * 80 + 10}%`;
+        });
+
+        yesBtn.addEventListener('click', () => {
+            question.classList.add('hidden');
+            birthdayMessage.classList.remove('hidden');
+        });
+
+        splineViewer.addEventListener('click', (event) => {
+            if (event.target.tagName === 'SPLINE-VIEWER') {
+                window.location.href = 'newtime.html'; // Replace with the actual link to your next page
+            }
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;600&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fad0c4);
+            background-size: 300% 300%;
+            animation: gradientBG 8s ease infinite;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .question-container {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease;
+        }
+
+        .question-container h1 {
+            font-size: 2.5rem;
+            margin: 0 0 20px;
+        }
+
+        .btn {
+            margin: 10px;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            border: 2px solid #fff;
+            border-radius: 25px;
+            color: #fff;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            background-color: rgba(0, 0, 0, 0.6);       
+        }
+
+        .btn:hover {
+            background: #ff6f61;
+            transform: scale(1.1);
+        }
+
+        .btn:focus {
+            outline: none;
+            box-shadow: 0 0 10px #fff, 0 0 20px #ff6f61;
+
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #greeting {
+            font-size: 4rem;
+            font-family: 'Caveat', cursive;
+            color: #fff;
+            text-align: center;
+            text-shadow: 0 0 10px #ff6f61, 0 0 20px #ff3cac, 0 0 30px #ff3cac;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        #message {
+            font-size: 1.2rem;
+            color: #150202;
+            margin-top: 20px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        spline-viewer {
+            width: 100%;
+            height: 300px;
+            margin: 20px 0;
+        }
+
+        /* Particle effect container */
+        .particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles-js"></div>
+    <div class="question-container" id="question">
+        <h1>Do you want to see something special?</h1>
+        <button class="btn" id="yes-btn">Yes</button>
+        <button class="btn" id="no-btn">No</button>
+    </div>
+
+    <div class="container hidden" id="birthday-message">
+        <h1 id="greeting">🎉 Happy Birthday Ram! 🎂</h1>
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
+        <spline-viewer id="spline-viewer" url="https://prod.spline.design/qe114ehbyg7RsjXQ/scene.splinecode"></spline-viewer>
+        <p id="message">Wishing you a day filled with love, joy, and laughter!</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0"></script>
+    <script>
+        /* Initialize particles.js */
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 100 },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.7 },
+                size: { value: 3 },
+                line_linked: { enable: false },
+                move: { speed: 2, direction: "none", random: true }
+            }
+        });
+
+        const yesBtn = document.getElementById('yes-btn');
+        const noBtn = document.getElementById('no-btn');
+        const question = document.getElementById('question');
+        const birthdayMessage = document.getElementById('birthday-message');
+        const splineViewer = document.getElementById('spline-viewer');
+
+
+        noBtn.addEventListener('mouseover', () => {
+            noBtn.style.position = 'absolute';
+            noBtn.style.top = `${Math.random() * 80 + 10}%`;
+            noBtn.style.left = `${Math.random() * 80 + 10}%`;
+        });
+
+        yesBtn.addEventListener('click', () => {
+            question.classList.add('hidden');
+            birthdayMessage.classList.remove('hidden');
+        });
+
+        splineViewer.addEventListener('click', (event) => {
+            if (event.target.tagName === 'SPLINE-VIEWER') {
+                window.location.href = 'newtime.html';  }
+        });
+    </script>
+</body>
+</html>
